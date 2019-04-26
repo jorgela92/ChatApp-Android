@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/md_grey_200"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.fragment.LoginFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="16dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:text="@string/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:textColor="@color/md_black_1000"
+            app:layout_constraintStart_toStartOf="@+id/guideline_left"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_imput_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:hint="@string/email"
+            android:textColorHint="@color/md_black_1000"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+            app:layout_constraintStart_toStartOf="@+id/guideline_left"
+            style="@style/TextInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/md_black_1000"
+                android:singleLine="true"
+                android:id="@+id/edit_text_email"
+                android:background="@drawable/round_rect_shape"
+                tools:ignore="Autofill, LabelFor"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_imput_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:textColorHint="@color/md_black_1000"
+            android:hint="@string/password"
+            app:layout_constraintTop_toBottomOf="@+id/text_imput_email"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+            app:layout_constraintStart_toStartOf="@+id/guideline_left"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleDrawable="@drawable/password_toggle"
+            style="@style/TextInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+                android:id="@+id/edit_text_password"
+                android:singleLine="true"
+                android:textColor="@color/md_black_1000"
+                android:imeOptions="actionDone"
+                tools:ignore="Autofill, LabelFor"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.SwitchCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch_login"
+            android:text="@string/recordar_usuario"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="8dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+            app:layout_constraintTop_toBottomOf="@+id/text_imput_password"
+            app:layout_constraintStart_toStartOf="@+id/guideline_left"
+            app:theme="@style/SwitchStyle"/>
+
+    <com.google.android.material.button.MaterialButton
+            android:text="@string/entrar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_login"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/md_white_1000"
+            android:elevation="2dp"
+            app:cornerRadius="20dp"
+            app:backgroundTint="@color/md_light_green_A700"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+            app:layout_constraintTop_toBottomOf="@+id/switch_login"
+            app:layout_constraintStart_toStartOf="@+id/guideline_left"/>
+
+    <com.google.android.material.button.MaterialButton
+            android:text="@string/registrarse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_register"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/md_white_1000"
+            android:elevation="2dp"
+            app:cornerRadius="20dp"
+            app:backgroundTint="@color/md_light_blue_A700"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+            app:layout_constraintTop_toBottomOf="@+id/button_login"
+            app:layout_constraintStart_toStartOf="@+id/guideline_left"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
