@@ -1,0 +1,113 @@
+{
+  "project_info": {
+    "project_number": "91065895078",
+    "firebase_url": "https://wathasapp-9dc3a.firebaseio.com",
+    "project_id": "wathasapp-9dc3a",
+    "storage_bucket": "wathasapp-9dc3a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91065895078:android:90a28fbfbbe84511",
+        "android_client_info": {
+          "package_name": "com.example.jorgelapenaanton.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91065895078-9tppkesddale1mqbtq4cbl5sksc6iref.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jorgelapenaanton.chatapp",
+            "certificate_hash": "51c2ee84d41d6a55f21447143038e0b525a26548"
+          }
+        },
+        {
+          "client_id": "91065895078-jm2j2an1efver26cv2gcma6cm2b8i59d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEq7LnyHQm7GzdiaYPtOmka1AGWeNmous"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91065895078-jm2j2an1efver26cv2gcma6cm2b8i59d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "91065895078-7c43rhmh4a7078sri980os73chke3ivd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.jorgelape.ChatApp"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91065895078:android:84766c1054bf13e3",
+        "android_client_info": {
+          "package_name": "com.example.jorgelapenaanton.data"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91065895078-jr4c8uab1eiqqufjf4tppeass76o7oho.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jorgelapenaanton.data",
+            "certificate_hash": "51c2ee84d41d6a55f21447143038e0b525a26548"
+          }
+        },
+        {
+          "client_id": "91065895078-jm2j2an1efver26cv2gcma6cm2b8i59d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEq7LnyHQm7GzdiaYPtOmka1AGWeNmous"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91065895078-jm2j2an1efver26cv2gcma6cm2b8i59d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "91065895078-7c43rhmh4a7078sri980os73chke3ivd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.jorgelape.ChatApp"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
