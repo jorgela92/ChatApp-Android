@@ -52,11 +52,10 @@ dependencies {
     implementation "com.google.firebase:firebase-storage:$firebase_storage_version"
 
     //Fabric
-    implementation 'com.google.firebase:firebase-core:16.0.8'
-    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.0'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
 
     //Performance Monitoring
-    implementation 'com.google.firebase:firebase-perf:16.2.5'
+    implementation 'com.google.firebase:firebase-perf:17.0.2'
 
     // RxJava
     implementation "io.reactivex.rxjava2:rxjava:$rxjava_version"
